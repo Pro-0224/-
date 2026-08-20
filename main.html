@@ -1,52 +1,59 @@
 <div align="center">
   <style>
-    /* 认知径核心样式 */
-    .cognitive-path {
+    /* 个人主页极简样式 */
+    .profile-card {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 20px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    }
-    .center-node {
-      background: #161b22; /* GitHub 深色模式背景色 */
-      color: #c9d1d9;
-      padding: 10px 20px;
-      border-radius: 20px;
-      font-weight: bold;
-      border: 1px solid #30363d;
-    }
-    .branches {
-      display: flex;
       gap: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #c9d1d9;
+    }
+    .bio {
+      font-size: 16px;
+      color: #8b949e;
+      line-height: 1.5;
+    }
+    .tags {
+      display: flex;
+      gap: 10px;
       flex-wrap: wrap;
       justify-content: center;
+      margin-top: 10px;
     }
-    .branch {
+    .tag {
       background: #21262d;
       color: #8b949e;
-      padding: 8px 15px;
+      padding: 5px 12px;
       border-radius: 15px;
-      font-size: 14px;
+      font-size: 12px;
       border: 1px solid #30363d;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
-    .branch:hover {
-      background: #30363d;
-      color: #ffffff;
-      transform: translateY(-2px);
     }
   </style>
 
-  <div class="cognitive-path">
-    <div class="center-node"> 认知径</div>
-    <div class="branches">
-      <a class="branch" href="#tech"> 技术栈</a>
-      <a class="branch" href="#algo"> 算法思维</a>
-      <a class="branch" href="#mc">️ 虚拟世界</a>
-      <a class="branch" href="#magic">🪄 魔法哲学</a>
-      <a class="branch" href="#dev">️ 开发环境</a>
+  <div class="profile-card">
+    <!-- 个人名片区 -->
+    <div class="name">[ 你的名字 / ID ]</div>
+    <div class="bio">[ 在这里写一句简短的自我介绍，比如：一个热爱算法与魔法世界的探索者 ]</div>
+    
+    <!-- 核心标签区 -->
+    <div class="tags">
+      <span class="tag">[ 标签1，如：OI选手 ]</span>
+      <span class="tag">[ 标签2，如：C++ ]</span>
+      <span class="tag">[ 标签3，如：Minecraft ]</span>
+      <span class="tag">[ 标签4，如：哈利波特 ]</span>
     </div>
   </div>
+</div>
+
+<!-- 动态数据区（可选，放在名片下方） -->
+<div align="center">
+  <br>
+  !<Your GitHub Stats>
 </div>
